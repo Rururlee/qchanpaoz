@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+
+/*--------------------------------------------------------------------------
+   c_img-box
+---------------------------------------------------------------------------*/
+
+/* c_img-box */
+.c_img-box .img._left{
+	float: left;
+}
+.c_img-box .img._right{
+	float: right;
+}
+.c_img-box .txt-wrap{
+	overflow: hidden;
+}
+/* c_img-box01 */
+.c_img-box01{
+	display: table;
+	width: 100%;
+}
+.c_img-box01 .cell{
+	display: table-cell;
+	vertical-align: middle;
+}
+

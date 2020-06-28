@@ -1,0 +1,72 @@
+%!Adobe-FontList 1.14
+%Locale:0x404
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:CID
+FontName:NotoSansTC-Light
+FamilyName:Noto Sans TC Light
+StyleName:Regular
+FullName:Noto Sans TC Light
+MenuName:Noto Sans TC Light
+StyleBits:0
+FamilyNameNative:
+StyleNameNative:Regular
+FullNameNative:
+WritingScript:Japanese
+OutlineFileName:C:\Users\ruru\Desktop\Q醬包子店\q-web\Font\NotoSansTC-Light.otf
+DataFormat:sfntData
+isCFF:yes
+FileLength:2703224
+FileModTime:1445848062
+WeightClass:300
+WidthClass:5
+AngleClass:0
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:CID
+FontName:NotoSansTC-Medium
+FamilyName:Noto Sans TC Medium
+StyleName:Regular
+FullName:Noto Sans TC Medium
+MenuName:Noto Sans TC Medium
+StyleBits:0
+FamilyNameNative:
+StyleNameNative:Regular
+FullNameNative:
+WritingScript:Japanese
+OutlineFileName:C:\Users\ruru\Desktop\Q醬包子店\q-web\Font\NotoSansTC-Medium.otf
+DataFormat:sfntData
+isCFF:yes
+FileLength:2705916
+FileModTime:1445848062
+WeightClass:500
+WidthClass:5
+AngleClass:0
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:CID
+FontName:NotoSansTC-Regular
+FamilyName:Noto Sans TC Regular
+StyleName:Regular
+FullName:Noto Sans TC Regular
+MenuName:Noto Sans TC Regular
+StyleBits:0
+FamilyNameNative:
+StyleNameNative:Regular
+FullNameNative:
+WritingScript:Japanese
+OutlineFileName:C:\Users\ruru\Desktop\Q醬包子店\q-web\Font\NotoSansTC-Regular.otf
+DataFormat:sfntData
+isCFF:yes
+FileLength:2701544
+FileModTime:1445848062
+WeightClass:400
+WidthClass:5
+AngleClass:0
+%EndFont
+
