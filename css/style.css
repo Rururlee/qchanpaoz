@@ -93,8 +93,10 @@ header{
 }
 
 .guide{
-	float: right;
+	display: flex;
 	padding-right: 10px;
+	align-items: center;
+	justify-content: flex-end;
 
 }
 
@@ -159,18 +161,24 @@ header{
 
 .snsNav{
 	display: inline-block;
-	vertical-align: bottom;
 	/*position: absolute;
 	top:0px;
 	right: 0px;*/
 
 }
-
-.snsNav ul li{
-	padding-right: 20px;
-	display: table-cell;
-
+.lang{
+	cursor: pointer;
 }
+.snsNav ul li{
+	display: table-cell;
+}
+.snsNav ul li:nth-child(1),.snsNav ul li:nth-child(2){
+	padding-right: 20px;
+}
+.snsNav ul li:nth-child(5){
+	padding: 0 5px;
+}
+
 .snsNav ul li img{
 	width: 20px;
 }
@@ -657,7 +665,7 @@ dl,dt,dd{
 }
 
 .bn-goods{
-	margin:0 auto;
+	margin:0 auto 10rem;
 	text-align: center;
 	position: relative;
 	width: 1024px;

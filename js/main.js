@@ -59,12 +59,6 @@ $(function(){
      transitionDuration: 3000 
   });
 });
-$(function(){
-    hStick.init();
-$(".sticky-wrap .icon-close").click(function () {
-		$(this).parents(".sticky-wrap").fadeOut();
-});
-})
 
 
 
@@ -103,10 +97,10 @@ $(function(){
 
 
 
-$(document).ready(function(){//lightbox
-	$(".inline").colorbox({inline:true, width:"1100px"});
-	$(".sp-inline").colorbox({inline:true, width:"100%",height:"950px"});
-})
+// $(document).ready(function(){//lightbox
+// 	$(".inline").colorbox({inline:true, width:"1100px"});
+// 	$(".sp-inline").colorbox({inline:true, width:"100%",height:"950px"});
+// })
 
 
 //menu-area
