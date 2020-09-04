@@ -438,6 +438,7 @@ const langLib = {
     },
 }
 
+// 當前語言
 var lang = localStorage.getItem('lang')
 if (lang == 'cn') {
     changeChinese()
@@ -785,7 +786,7 @@ function changeJapanese() {
 function changeTitle() {
     // 抓到網址
     let url = new URL(window.location.href);
-    let pathname = url.pathname.split('/')[1]
+    let pathname = url.pathname.split('/')[2]
     console.log(lang)
     if (lang == 'cn') {
         switch (pathname) {
