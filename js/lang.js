@@ -787,7 +787,7 @@ function changeTitle() {
     // 抓到網址
     let url = new URL(window.location.href);
     let pathname = url.pathname.split('/')[2]
-    console.log(lang)
+    // console.log(lang)
     if (lang == 'cn') {
         switch (pathname) {
             case '':
