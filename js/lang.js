@@ -476,6 +476,7 @@ function changeChinese() {
     $('.ct-word .paoz').html(langLib.cn.index.paozinfo)
     $('.ct-word .manto').html(langLib.cn.index.mantoinfo)
     $('.slogan').html(langLib.cn.index.slogan)
+    $('.t-btn').attr('src','./images/t-btn-cn.png')
     // about 
     $('.about-bn .bn-title').html(langLib.cn.normal.about)
     $('.n1').html(langLib.cn.about.title)
@@ -642,6 +643,7 @@ function changeJapanese() {
     $('.ct-word .paoz').html(langLib.jp.index.paozinfo)
     $('.ct-word .manto').html(langLib.jp.index.mantoinfo)
     $('.slogan').html(langLib.jp.index.slogan)
+    $('.t-btn').attr('src','./images/t-btn.png')
     // about 
     $('.about-bn .bn-title').html(langLib.jp.normal.about)
     $('.n1').html(langLib.jp.about.title)
