@@ -439,7 +439,7 @@ const langLib = {
 }
 
 // 當前語言
-var lang = localStorage.getItem('lang')
+let lang = localStorage.getItem('lang')
 if (lang == 'cn') {
     changeChinese()
 } else if (lang == 'jp') {
