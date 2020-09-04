@@ -820,6 +820,9 @@ function changeTitle() {
         }
     } else {
         switch (pathname) {
+            case '':
+                document.title = 'Qちゃん包子饅頭店'
+                break;
             case 'index.html':
                 document.title = 'Qちゃん包子饅頭店'
                 break;
