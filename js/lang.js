@@ -1,6 +1,6 @@
 
 // 文字庫
-var langLib = {
+const langLib = {
     cn: {
         normal: {
             about: '關於Q醬包子饅頭店',
@@ -9,12 +9,12 @@ var langLib = {
             shop: '店鋪介紹',
             order: '網路購買',
             top: '回首頁',
-            shipping: '運費',
-            law: '特定交易法',
+            delivery: '運費',
+            terms: '特定交易法',
         },
         footer: {
-            date: '營業時間',
-            soldout: '※直到完售',
+            date: '營業時間：',
+            soldout: '9:00～ ※直到完售',
             rest: '公休日：星期日、星期一、例假日',
             name: 'Q醬包子饅頭店',
         },
@@ -106,26 +106,116 @@ var langLib = {
                 priceAll: '5入650日圓(含稅)',
                 content: '在台灣小吃攤上很常見，和"蔥油餅"很類似，差別在於蔥油餅表面平整，但是蔥抓餅的形成是將帶有韭菜的麵團，捲成棒狀後再捲成螺旋狀，接著薄薄地捲出來，從而形成多層餅皮。此外，在烘烤時，其特徵是用左右兩把刮刀從左右將其夾在中間，以使空氣進入內部並使其蓬鬆。'
             },
-            sausage:{
+            sausage: {
                 title: '香腸',
                 price: '700日圓',
                 priceAll: '5入700日圓(含稅)',
-                content: '在台灣攤位上常見炭火烤的和鐵板燒並與大蒜一起賣的食物。QQ（彈性）多汁又甜美，是台灣主食，與生大蒜一起吃可以使它的味道更好。輕輕在煎鍋上上油，然後用低火將其滾烤，它會變成棕色，香氣會更高。'            
+                content: '在台灣攤位上常見炭火烤的和鐵板燒並與大蒜一起賣的食物。QQ（彈性）多汁又甜美，是台灣主食，與生大蒜一起吃可以使它的味道更好。輕輕在煎鍋上上油，然後用低火將其滾烤，它會變成棕色，香氣會更高。'
             }
         },
-        howtoeat:{
-            heatup:'包子與饅頭的加熱方式',
-            notice:'※商品送達後，請儘早放入冰箱或是冷凍庫中',
-            deadlineA:'肉包、菜包、芋頭包・・・冷藏保存期限4天、冷凍保存期限1個月',
-            deadlineB:'白饅頭、黑糖饅頭、其它饅頭等・・・冷藏保存期限1週、冷凍保存期限1個月',
-            eatTittleA:'使用大同電鍋蒸煮',
-            eatTittleB:'使用蒸鍋蒸煮',
-            eatTittleC:'使用一般鍋子蒸煮',
-            eatTittleD:'使用微波爐蒸煮',
-            eatTextA:'將一杯水的量倒入電鍋裡，將肉包或饅頭放在碟子上，再將碟子放在蒸架上，蒸煮直到電源關閉就可以吃了。注意，蒸煮完後不要長時間放在電鍋中，肉包和饅頭的表皮會變硬。',
-            eatTextB:'用足夠的蒸氣將冷凍肉包及饅頭放入蒸鍋中，並用中火蒸約15分鐘。如果是解凍後的肉包及饅頭，請用中火蒸約5分鐘。',
-            eatTextC:'把有高度的碗倒著放入加深的鍋，煮超過3厘米的水，水燒開後關火，將肉包和饅頭放在另一個盤子上，並排放置。當水沸騰時，將裝有肉包和饅頭的盤子放在倒著的碗上，用布包住鍋，然後蓋在鍋上。如果是冷凍的包子或饅頭，用中火蒸約15分鐘。',
-            eatTextD:'能在短時間內加熱，但不建議這樣做，因為這樣肉包及饅頭麵團會變乾且表面會變硬。',
+        howtoeat: {
+            heatupA: '包子與饅頭的加熱方式',
+            heatupB: '一品料理的加熱方式',
+            notice: '※商品送達後，請儘早放入冰箱或是冷凍庫中',
+            deadlineA: '肉包、菜包、芋頭包・・・冷藏保存期限4天、冷凍保存期限1個月',
+            deadlineB: '白饅頭、黑糖饅頭、其它饅頭等・・・冷藏保存期限1週、冷凍保存期限1個月',
+            eatTittleA: '使用大同電鍋蒸煮',
+            eatTittleB: '使用蒸鍋蒸煮',
+            eatTittleC: '使用一般鍋子蒸煮',
+            eatTittleD: '使用微波爐蒸煮',
+            eatTextA: '將一杯水的量倒入電鍋裡，將包子饅頭放在碟子上，再將碟子放在蒸架上，蒸煮直到電源關閉就可以吃了。注意，蒸煮完後不要長時間放在電鍋中，包子和饅頭的表皮會變硬。',
+            eatTextB: '用足夠的蒸氣將冷凍包子饅頭放入蒸鍋中，並用中火蒸約15分鐘。如果是解凍後的包子饅頭，請用中火蒸約5分鐘。',
+            eatTextC: '把有高度的碗倒著放入加深的鍋，煮超過3公分的水，水燒開後關火，將包子和饅頭放在另一個盤子上，並排放置。當水沸騰時，將裝有包子和饅頭的盤子放在倒著的碗上，用布包住鍋，然後蓋在鍋上。如果是冷凍的包子或饅頭，用中火蒸約15分鐘。',
+            eatTextD: '能在短時間內加熱，但不建議這樣做，因為這樣包子及饅頭麵團會變乾且表面會變硬。',
+            noticeList: '1.吃多少蒸多少，不要有二次以上回蒸動作。<br>2.蒸好後不要放在電鍋內保溫太久，可以先拿出用保鮮膜包起來避免變硬。<br>3.收到包子饅頭後請冷凍保鮮。',
+            chicken: {
+                title: '醉雞',
+                content: '解凍後，切成約1公分的間隔，並在上面撒上醃製的湯。紹興酒味會去掉，所以小孩子也能享用。'
+            },
+            ocowa: {
+                title: '油飯',
+                content: '轉移到另一個容器中，在500瓦的微波爐中包裹並加熱3分鐘20秒。加熱條件會因設備而異，因此請適當調整加熱時間。'
+            },
+            sausage: {
+                title: '香腸',
+                content: '在平底鍋上輕輕上油並烘烤，同時在低火下滾動使其焦炭化，散發出更好的香氣。請配大蒜片一起品嚐。'
+            }
+        },
+        shop: {
+            address: '地址',
+            phone: '電話號碼',
+            subway: '日暮里‧舎人線 西新井大師西站…從東口步行約7分',
+            restTit: '公休日',
+            rest: '星期日、星期一、例假日'
+        },
+        delivery: {
+            title: '運費項目',
+            area: '送貨地區',
+            size1: '60尺寸',
+            size2: '80尺寸',
+            size3: '100尺寸',
+            size4: '120尺寸',
+            kg1: '< 2kg',
+            kg2: '< 5kg',
+            kg3: '< 10kg',
+            kg4: '< 15kg',
+        },
+        terms: {
+            title: '基於特定交易法的記載',
+            terms1: {
+                title: '販售業者',
+                content: 'Q醬包子饅頭店'
+            },
+            terms2: {
+                title: '代表負責人姓名'
+            },
+            terms3: {
+                title: '地址'
+            },
+            terms4: {
+                title: '電話號碼'
+            },
+            terms5: {
+                title: '電話受理時間'
+            },
+            terms6: {
+                title: '郵件地址'
+            },
+            terms7: {
+                title: '主頁網址',
+            },
+            terms8: {
+                title: '販售價格',
+                content: '請參照各商品頁。'
+            },
+            terms9: {
+                title: '商品價格以外的必要費用',
+                content: '運費(大和運輸的冷凍宅急便。請參照下列運費表。)如果是匯款，則收取匯款手續費。如果是Paypal，則須支付Paypal的手續費(訂單金額X 3.6%+40日圓)。'
+            },
+            terms10: {
+                title: '交貨時間',
+                content: '由於是收到訂單才開始製作，因此確認匯款後，最長會在2週以內送出商品。'
+            },
+            terms11: {
+                title: '支付方法',
+                content: '銀行、日本郵局轉帳、Paypal。'
+            },
+            terms12: {
+                title: '付款截止日期',
+                content: '請於7日內匯款，若7日間沒有付款，該訂單將被取消。'
+            },
+            terms13: {
+                title: '退貨、換貨、取消等',
+                content: '不受理退貨或產品發貨後退貨。僅當產品有缺陷時，我們才會換貨。取消僅在訂購後24小時內受理。'
+            },
+            terms14: {
+                title: '退貨截止時間',
+                content: '請在產品發貨後7天內與我們聯繫。'
+            },
+            terms15: {
+                title: '退貨運費',
+                content: '我們將承擔缺陷產品費用。其餘情況您將承擔費用。'
+            }
         }
     },
     jp: {
@@ -136,8 +226,8 @@ var langLib = {
             shop: '店舗のご案内',
             order: '通信販売',
             top: 'トップページ',
-            shipping: '送料について',
-            law: '特定商取引法',
+            delivery: '送料について',
+            terms: '特定商取引法',
         },
         footer: {
             date: '営業時間',
@@ -233,26 +323,117 @@ var langLib = {
                 priceAll: '5枚￥650(税込)',
                 content: '台湾の屋台でよく見かける「葱抓餅（ツォンジュアビン）」。<br>似たようなもので、「葱油餅（ツォンヨービン）」というものもあります。違いは、葱油餅は平たいままですが、葱抓餅は薄く伸ばした生地にネギを入れて丸めて棒状にし、更にそれを渦巻状の円形にして薄く伸ばすことで、何重もの皮ができるようにしてあります。更に焼く時に2つのヘラで左右から挟むようにして中に空気を入れ、ふわふわにするのが特徴です。'
             },
-            sausage:{
+            sausage: {
                 title: '香腸(台湾ソーセージ)',
                 price: '700円',
                 priceAll: '5入￥700(税込)',
                 content: '台湾の屋台でおなじみ、炭焼き、鉄板焼きされて、生のニンニクの塊と一緒に販売されています。QQで(弾力のある)、ジューシーで甘みがあり、生ニンニクをかじりながらと一緒に食べるのが台湾の定番で、風味がさらに良くなります。<br>フライパンに薄く油をひいて、弱火で転がしながら焼くと、焦げ目がついて、香りがいっそう高くなります。'
             }
         },
-        howtoeat:{
-            heatup:'パオズ、マントウの温め方',
-            notice:'※商品到着後は、すぐに冷蔵庫または冷凍庫に入れてください。',
-            deadlineA:'肉まん、野菜まん、芋あんまん・・・冷蔵で4日、冷凍で1ヶ月',
-            deadlineB:'肉まん、野菜まん、芋あんまん・・・冷蔵で4日、冷凍で1ヶ月',
-            eatTittleA:'大同電鍋で蒸す方法',
-            eatTittleB:'蒸し器で蒸す方法',
-            eatTittleC:'鍋で蒸す方法',
-            eatTittleD:'電子レンジで蒸す方法',
-            eatTextA:'電鍋本体に、カップ1杯の水を入れ、肉まんや饅頭を皿の上に置き、その皿を蒸し棚の上に置く。電源が切れるまで蒸せば、食べれる状態になります。注意、蒸した後に長時間電鍋の中に置かないでください。肉まんや饅頭の生地が乾いて表面が硬くなります。',
-            eatTextB:'蒸気が十分に出ている状態で、冷凍状態の肉まんや饅頭を蒸し器の中に置き、中火で約15分間蒸してください。解凍した肉まんや饅頭を蒸す場合は、中火で約5分間蒸してください。',
-            eatTextC:'深めの鍋に、高さのあるお椀を逆さまに入れます。水を3cmほど張り沸騰するまで、火にかけます。別の平らな皿に肉まんや饅頭を置き並べておきます。お湯が沸騰してきたら、肉まんや饅頭を並べておいた皿を逆さまにしたお椀の上に乗せます。鍋を布巾で包み、鍋の上に被せます。冷凍の場合は、中火で約15分間蒸してください。',
-            eatTextD:'短時間で温かくなりますが、肉まんや饅頭の生地が乾いて表面が硬くなるので、お勧めしません。',
+        howtoeat: {
+            heatupA: 'パオズ、マントウの温め方',
+            heatupB: '一品料理の温め方',
+            notice: '※商品到着後は、すぐに冷蔵庫または冷凍庫に入れてください。',
+            deadlineA: '肉まん、野菜まん、芋あんまん・・・冷蔵で4日、冷凍で1ヶ月',
+            deadlineB: '肉まん、野菜まん、芋あんまん・・・冷蔵で4日、冷凍で1ヶ月',
+            eatTittleA: '大同電鍋で蒸す方法',
+            eatTittleB: '蒸し器で蒸す方法',
+            eatTittleC: '鍋で蒸す方法',
+            eatTittleD: '電子レンジで蒸す方法',
+            eatTextA: '電鍋本体に、カップ1杯の水を入れ、肉まんや饅頭を皿の上に置き、その皿を蒸し棚の上に置く。電源が切れるまで蒸せば、食べれる状態になります。注意、蒸した後に長時間電鍋の中に置かないでください。肉まんや饅頭の生地が乾いて表面が硬くなります。',
+            eatTextB: '蒸気が十分に出ている状態で、冷凍状態の肉まんや饅頭を蒸し器の中に置き、中火で約15分間蒸してください。解凍した肉まんや饅頭を蒸す場合は、中火で約5分間蒸してください。',
+            eatTextC: '深めの鍋に、高さのあるお椀を逆さまに入れます。水を3cmほど張り沸騰するまで、火にかけます。別の平らな皿に肉まんや饅頭を置き並べておきます。お湯が沸騰してきたら、肉まんや饅頭を並べておいた皿を逆さまにしたお椀の上に乗せます。鍋を布巾で包み、鍋の上に被せます。冷凍の場合は、中火で約15分間蒸してください。',
+            eatTextD: '短時間で温かくなりますが、肉まんや饅頭の生地が乾いて表面が硬くなるので、お勧めしません。',
+            noticeList: '1.食べる分だけ蒸してください。何度も蒸し直さないでください。<br>2.蒸し終わった後、電鍋、蒸し器、鍋などの中に入れたままにしないでください。食べきれずに残った分は、生地の表面が乾燥しないように、ラップで包んでください。<br>3.商品が到着したら、鮮度を保つために冷凍保存してください。',
+            chicken: {
+                title: '酔っ払い鶏',
+                content: '解凍後、約1cm間隔に薄切りにして、漬け汁を上にかけてお召し上がりください。紹興酒のアルコールは飛んでなくなっていますので、お子様でもお召し上がりいただけます。'
+            },
+            ocowa: {
+                title: '台湾風おこわ',
+                content: '別の容器に移して、ラップをして電子レンジの500Wで、3分20秒温めてください。機器によって、温まり具合が変化しますので、適宜温め時間の調整をお願いいたします。'
+            },
+            sausage: {
+                title: '香腸(台湾ソーセージ)',
+                content: 'フライパンに薄く油を引いて、弱火で転がしながら焼くと、焦げ目がついて、香りが一層良くなります。ニンニクの塊をかじりながら、ご賞味ください。'
+            }
+        },
+        shop: {
+            address: '住所',
+            phone: '電話番号',
+            subway: '日暮里‧舎人線 西新井大師西駅…東口より徒歩7分',
+            restTit: '定休日',
+            rest: '日曜日、月曜日、祝日'
+        },
+        delivery: {
+            title: '発送料金一覧表',
+            area: '配送エリア',
+            size1: '60サイズ',
+            size2: '80サイズ',
+            size3: '100サイズ',
+            size4: '120サイズ',
+            kg1: '2kgまで',
+            kg2: '5kgまで',
+            kg3: '10kgまで',
+            kg4: '15kgまで',
+        },
+        terms: {
+            title: '特定商取引法に基づく表記',
+            terms1: {
+                title: '販売業者名',
+                content: 'Qちゃん包子饅頭店'
+            },
+            terms2: {
+                title: '代表責任者名',
+                content: '李　佳惠'
+            },
+            terms3: {
+                title: '所在地'
+            },
+            terms4: {
+                title: '電話番号'
+            },
+            terms5: {
+                title: '電話受付時間'
+            },
+            terms6: {
+                title: 'メールアドレス'
+            },
+            terms7: {
+                title: 'ホームページURL',
+            },
+            terms8: {
+                title: '販売価格',
+                content: '各商品ページをご参照ください。'
+            },
+            terms9: {
+                title: '商品代金以外の必要料金',
+                content: '送料（ヤマト運輸のクール宅急便。下記運賃表を参照してください。）振込の場合、振込手数料。Paypalの場合、Paypalの手数料(ご注文金額 X 3.6％ + 40円)。'
+            },
+            terms10: {
+                title: 'お届け時期',
+                content: '受注生産のため、入金確認後、最長で2週間以内には商品を発送いたします。'
+            },
+            terms11: {
+                title: 'お支払方法',
+                content: '銀行、ゆうちょ振込、Paypal'
+            },
+            terms12: {
+                title: 'お申込みの有効期限',
+                content: '7日以内にお願いいたします。7日間入金がない場合は、キャンセルとさせていただきます。'
+            },
+            terms13: {
+                title: '返品・交換・キャンセル等',
+                content: '商品発送後の返品・返却等はお受けいたしかねます。商品が不良の場合のみ交換いたします。キャンセルは注文後24時間以内に限り受付いたします。'
+            },
+            terms14: {
+                title: '返品期限',
+                content: '商品出荷より7日以内にご連絡下さい。'
+            },
+            terms15: {
+                title: '返品送料',
+                content: '不良品の場合は弊社が負担いたします。それ以外はお客様のご負担となります。'
+            }
         }
     },
 }
@@ -270,10 +451,15 @@ if (lang == 'cn') {
 function changeChinese() {
     // 設定語言
     localStorage.setItem('lang', 'cn')
+    lang = 'cn'
+    changeTitle()
+    // 關閉漢堡
+    $('.fat-nav').fadeOut()
+    $('.fat-nav,.hamburger').removeClass('active')
 
-    $('.guide ul li:nth-child(1),.sp-guide ul li:nth-child(1)').html(langLib.cn.normal.top)
-    $('.guide ul li:nth-child(3),.sp-guide ul li:nth-child(3)').html(langLib.cn.normal.shipping)
-    $('.guide ul li:nth-child(5),.sp-guide ul li:nth-child(5)').html(langLib.cn.normal.law)
+    $('.guide ul li:nth-child(1) a,.sp-guide ul li:nth-child(1) a').html(langLib.cn.normal.top)
+    $('.guide ul li:nth-child(3) a,.sp-guide ul li:nth-child(3) a').html(langLib.cn.normal.delivery)
+    $('.guide ul li:nth-child(5) a,.sp-guide ul li:nth-child(5) a').html(langLib.cn.normal.terms)
     // footer
     $('.foot-word .date').html(langLib.cn.footer.date)
     $('.foot-word .soldout').html(langLib.cn.footer.soldout)
@@ -356,28 +542,90 @@ function changeChinese() {
 
     // howtoeat
     $('.howtoeat-bn .bn-title').html(langLib.cn.normal.howtoeat)
-    $('.heatup').html(langLib.cn.howtoeat.heatup)
+    $('.heatupA').html(langLib.cn.howtoeat.heatupA)
     $('.tit-notice').html(langLib.cn.howtoeat.notice)
     $('.deadlineA').html(langLib.cn.howtoeat.deadlineA)
     $('.deadlineB').html(langLib.cn.howtoeat.deadlineB)
-    $('.eat-t:nth-child(1)').html(langLib.cn.howtoeat.eatTittleA)
-    $('.eat-t-2:nth-child(1)').html(langLib.cn.howtoeat.eatTittleB)
-    $('.eat-t:nth-child(2)').html(langLib.cn.howtoeat.eatTittleC)
-    $('.eat-t-2:nth-child(2)').html(langLib.cn.howtoeat.eatTittleD)
+    $('.eat-item:nth-child(1) .tool').html(langLib.cn.howtoeat.eatTittleA)
+    $('.eat-item:nth-child(2) .tool').html(langLib.cn.howtoeat.eatTittleB)
+    $('.eat-item:nth-child(3) .tool').html(langLib.cn.howtoeat.eatTittleC)
+    $('.eat-item:nth-child(4) .tool').html(langLib.cn.howtoeat.eatTittleD)
     $('.eatTextA').html(langLib.cn.howtoeat.eatTextA)
     $('.eatTextB').html(langLib.cn.howtoeat.eatTextB)
     $('.eatTextC').html(langLib.cn.howtoeat.eatTextC)
     $('.eatTextD').html(langLib.cn.howtoeat.eatTextD)
+    $('.notice').html(langLib.cn.howtoeat.noticeList)
+    $('.heatupB').html(langLib.cn.howtoeat.heatupB)
+    $('.chicken-title').html(langLib.cn.howtoeat.chicken.title)
+    $('.chicken-content').html(langLib.cn.howtoeat.chicken.content)
+    $('.ocowa-title').html(langLib.cn.howtoeat.ocowa.title)
+    $('.ocowa-content').html(langLib.cn.howtoeat.ocowa.content)
+    $('.sausage-title').html(langLib.cn.howtoeat.sausage.title)
+    $('.sausage-content').html(langLib.cn.howtoeat.sausage.content)
+    // shop
+    $('.shop-bn .bn-title').html(langLib.cn.normal.shop)
+    $('.sub-shop-title').html(langLib.cn.normal.shop)
+    $('.shop-cont dt:nth-child(1)').html(langLib.cn.shop.address)
+    $('.shop-cont dt:nth-child(3)').html(langLib.cn.shop.phone)
+    $('.shop-cont dt:nth-child(5)').html(langLib.cn.footer.date)
+    $('.shop-cont dd:nth-child(6)').html(langLib.cn.footer.soldout)
+    $('.shop-cont dt:nth-child(7)').html(langLib.cn.shop.restTit)
+    $('.shop-cont dd:nth-child(8)').html(langLib.cn.shop.rest)
+    $('.shop-cont dd:nth-child(10)').html(langLib.cn.shop.subway)
+    // delivery
+    $('.delivery-bn .bn-title').html(langLib.cn.normal.delivery)
+    $('.delivery-title').html(langLib.cn.delivery.title)
+    $('.table-tit td:nth-child(1)').html(langLib.cn.delivery.area)
+    $('.table-tit td:nth-child(2)').html(langLib.cn.delivery.size1)
+    $('.table-tit td:nth-child(3)').html(langLib.cn.delivery.size2)
+    $('.table-tit td:nth-child(4)').html(langLib.cn.delivery.size3)
+    $('.table-tit td:nth-child(5)').html(langLib.cn.delivery.size4)
+    $('.table-tit2 td:nth-child(1)').html(langLib.cn.delivery.kg1)
+    $('.table-tit2 td:nth-child(2)').html(langLib.cn.delivery.kg2)
+    $('.table-tit2 td:nth-child(3)').html(langLib.cn.delivery.kg3)
+    $('.table-tit2 td:nth-child(4)').html(langLib.cn.delivery.kg4)
+    // terms
+    $('.terms-bn .bn-title').html(langLib.cn.normal.terms)
+    $('.terms-title').html(langLib.cn.terms.title)
+    $('.terms1 dt').html(langLib.cn.terms.terms1.title)
+    $('.terms1 dd').html(langLib.cn.terms.terms1.content)
+    $('.terms2 dt').html(langLib.cn.terms.terms2.title)
+    $('.terms3 dt').html(langLib.cn.terms.terms3.title)
+    $('.terms4 dt').html(langLib.cn.terms.terms4.title)
+    $('.terms5 dt').html(langLib.cn.terms.terms5.title)
+    $('.terms6 dt').html(langLib.cn.terms.terms6.title)
+    $('.terms7 dt').html(langLib.cn.terms.terms7.title)
+    $('.terms8 dt').html(langLib.cn.terms.terms8.title)
+    $('.terms8 dd').html(langLib.cn.terms.terms8.content)
+    $('.terms9 dt').html(langLib.cn.terms.terms9.title)
+    $('.terms9 dd').html(langLib.cn.terms.terms9.content)
+    $('.terms10 dt').html(langLib.cn.terms.terms10.title)
+    $('.terms10 dd').html(langLib.cn.terms.terms10.content)
+    $('.terms11 dt').html(langLib.cn.terms.terms11.title)
+    $('.terms11 dd').html(langLib.cn.terms.terms11.content)
+    $('.terms12 dt').html(langLib.cn.terms.terms12.title)
+    $('.terms12 dd').html(langLib.cn.terms.terms12.content)
+    $('.terms13 dt').html(langLib.cn.terms.terms13.title)
+    $('.terms13 dd').html(langLib.cn.terms.terms13.content)
+    $('.terms14 dt').html(langLib.cn.terms.terms14.title)
+    $('.terms14 dd').html(langLib.cn.terms.terms14.content)
+    $('.terms15 dt').html(langLib.cn.terms.terms15.title)
+    $('.terms15 dd').html(langLib.cn.terms.terms15.content)
 }
 
 // 日文
 function changeJapanese() {
     // 設定語言
     localStorage.setItem('lang', 'jp')
+    lang = 'jp'
+    changeTitle()
+    // 關閉漢堡
+    $('.fat-nav').fadeOut()
+    $('.fat-nav,.hamburger').removeClass('active')
 
-    $('.guide ul li:nth-child(1),.sp-guide ul li:nth-child(1)').html(langLib.jp.normal.top)
-    $('.guide ul li:nth-child(3),.sp-guide ul li:nth-child(3)').html(langLib.jp.normal.shipping)
-    $('.guide ul li:nth-child(5),.sp-guide ul li:nth-child(5)').html(langLib.jp.normal.law)
+    $('.guide ul li:nth-child(1) a,.sp-guide ul li:nth-child(1) a').html(langLib.jp.normal.top)
+    $('.guide ul li:nth-child(3) a,.sp-guide ul li:nth-child(3) a').html(langLib.jp.normal.delivery)
+    $('.guide ul li:nth-child(5) a,.sp-guide ul li:nth-child(5) a').html(langLib.jp.normal.terms)
     // footer
     $('.foot-word .date').html(langLib.jp.footer.date)
     $('.foot-word .soldout').html(langLib.jp.footer.soldout)
@@ -460,12 +708,136 @@ function changeJapanese() {
 
     // howtoeat
     $('.howtoeat-bn .bn-title').html(langLib.jp.normal.howtoeat)
-    $('.eat-t:nth-child(1)').html(langLib.jp.howtoeat.eatTittleA)
-    $('.eat-t-2:nth-child(1)').html(langLib.jp.howtoeat.eatTittleB)
-    $('.eat-t:nth-child(2)').html(langLib.jp.howtoeat.eatTittleC)
-    $('.eat-t-2:nth-child(2)').html(langLib.jp.howtoeat.eatTittleD)
+    $('.heatupA').html(langLib.jp.howtoeat.heatupA)
+    $('.tit-notice').html(langLib.jp.howtoeat.notice)
+    $('.deadlineA').html(langLib.jp.howtoeat.deadlineA)
+    $('.deadlineB').html(langLib.jp.howtoeat.deadlineB)
+    $('.eat-item:nth-child(1) .tool').html(langLib.jp.howtoeat.eatTittleA)
+    $('.eat-item:nth-child(2) .tool').html(langLib.jp.howtoeat.eatTittleB)
+    $('.eat-item:nth-child(3) .tool').html(langLib.jp.howtoeat.eatTittleC)
+    $('.eat-item:nth-child(4) .tool').html(langLib.jp.howtoeat.eatTittleD)
     $('.eatTextA').html(langLib.jp.howtoeat.eatTextA)
     $('.eatTextB').html(langLib.jp.howtoeat.eatTextB)
     $('.eatTextC').html(langLib.jp.howtoeat.eatTextC)
     $('.eatTextD').html(langLib.jp.howtoeat.eatTextD)
+    $('.notice').html(langLib.jp.howtoeat.noticeList)
+    $('.heatupB').html(langLib.jp.howtoeat.heatupB)
+    $('.chicken-title').html(langLib.jp.howtoeat.chicken.title)
+    $('.chicken-content').html(langLib.jp.howtoeat.chicken.content)
+    $('.ocowa-title').html(langLib.jp.howtoeat.ocowa.title)
+    $('.ocowa-content').html(langLib.jp.howtoeat.ocowa.content)
+    $('.sausage-title').html(langLib.jp.howtoeat.sausage.title)
+    $('.sausage-content').html(langLib.jp.howtoeat.sausage.content)
+    // shop
+    $('.shop-bn .bn-title').html(langLib.jp.normal.shop)
+    $('.sub-shop-title').html(langLib.jp.normal.shop)
+    $('.shop-cont dt:nth-child(1)').html(langLib.jp.shop.address)
+    $('.shop-cont dt:nth-child(3)').html(langLib.jp.shop.phone)
+    $('.shop-cont dt:nth-child(5)').html(langLib.jp.footer.date)
+    $('.shop-cont dd:nth-child(6)').html(langLib.jp.footer.soldout)
+    $('.shop-cont dt:nth-child(7)').html(langLib.jp.shop.restTit)
+    $('.shop-cont dd:nth-child(8)').html(langLib.jp.shop.rest)
+    $('.shop-cont dd:nth-child(10)').html(langLib.jp.shop.subway)
+    // delivery
+    $('.delivery-bn .bn-title').html(langLib.jp.normal.delivery)
+    $('.delivery-title').html(langLib.jp.delivery.title)
+    $('.table-tit td:nth-child(1)').html(langLib.jp.delivery.area)
+    $('.table-tit td:nth-child(2)').html(langLib.jp.delivery.size1)
+    $('.table-tit td:nth-child(3)').html(langLib.jp.delivery.size2)
+    $('.table-tit td:nth-child(4)').html(langLib.jp.delivery.size3)
+    $('.table-tit td:nth-child(5)').html(langLib.jp.delivery.size4)
+    $('.table-tit2 td:nth-child(1)').html(langLib.jp.delivery.kg1)
+    $('.table-tit2 td:nth-child(2)').html(langLib.jp.delivery.kg2)
+    $('.table-tit2 td:nth-child(3)').html(langLib.jp.delivery.kg3)
+    $('.table-tit2 td:nth-child(4)').html(langLib.jp.delivery.kg4)
+    // terms
+    $('.terms-bn .bn-title').html(langLib.jp.normal.terms)
+    $('.terms-title').html(langLib.jp.terms.title)
+    $('.terms1 dt').html(langLib.jp.terms.terms1.title)
+    $('.terms1 dd').html(langLib.jp.terms.terms1.content)
+    $('.terms2 dt').html(langLib.jp.terms.terms2.title)
+    $('.terms3 dt').html(langLib.jp.terms.terms3.title)
+    $('.terms4 dt').html(langLib.jp.terms.terms4.title)
+    $('.terms5 dt').html(langLib.jp.terms.terms5.title)
+    $('.terms6 dt').html(langLib.jp.terms.terms6.title)
+    $('.terms7 dt').html(langLib.jp.terms.terms7.title)
+    $('.terms8 dt').html(langLib.jp.terms.terms8.title)
+    $('.terms8 dd').html(langLib.jp.terms.terms8.content)
+    $('.terms9 dt').html(langLib.jp.terms.terms9.title)
+    $('.terms9 dd').html(langLib.jp.terms.terms9.content)
+    $('.terms10 dt').html(langLib.jp.terms.terms10.title)
+    $('.terms10 dd').html(langLib.jp.terms.terms10.content)
+    $('.terms11 dt').html(langLib.jp.terms.terms11.title)
+    $('.terms11 dd').html(langLib.jp.terms.terms11.content)
+    $('.terms12 dt').html(langLib.jp.terms.terms12.title)
+    $('.terms12 dd').html(langLib.jp.terms.terms12.content)
+    $('.terms13 dt').html(langLib.jp.terms.terms13.title)
+    $('.terms13 dd').html(langLib.jp.terms.terms13.content)
+    $('.terms14 dt').html(langLib.jp.terms.terms14.title)
+    $('.terms14 dd').html(langLib.jp.terms.terms14.content)
+    $('.terms15 dt').html(langLib.jp.terms.terms15.title)
+    $('.terms15 dd').html(langLib.jp.terms.terms15.content)
+}
+
+
+function changeTitle() {
+    // 抓到網址
+    let url = new URL(window.location.href);
+    let pathname = url.pathname.split('/')[1]
+    console.log(lang)
+    if (lang == 'cn') {
+        switch (pathname) {
+            case 'index.html':
+                document.title = 'Q醬包子饅頭店'
+                break;
+            case 'about.html':
+                document.title = '關於Q醬包子饅頭店 | Q醬包子饅頭店'
+                break;
+            case 'product.html':
+                document.title = '商品介紹 | Q醬包子饅頭店'
+                break;
+            case 'howtoeat.html':
+                document.title = '食用方式 | Q醬包子饅頭店'
+                break;
+            case 'shop.html':
+                document.title = '店鋪介紹 | Q醬包子饅頭店'
+                break;
+            case 'order.html':
+                document.title = '網路購買 | Q醬包子饅頭店'
+                break;
+            case 'delivery.html':
+                document.title = '運費 | Q醬包子饅頭店'
+                break;
+            case 'terms.html':
+                document.title = '特定交易法 | Q醬包子饅頭店'
+                break;
+        }
+    } else {
+        switch (pathname) {
+            case 'index.html':
+                document.title = 'Qちゃん包子饅頭店'
+                break;
+            case 'about.html':
+                document.title = 'Qちゃん包子饅頭について | Q醬包子饅頭店'
+                break;
+            case 'product.html':
+                document.title = '商品のご案内 | Q醬包子饅頭店'
+                break;
+            case 'howtoeat.html':
+                document.title = 'お召し上がり方 | Q醬包子饅頭店'
+                break;
+            case 'shop.html':
+                document.title = '店舗のご案内 | Q醬包子饅頭店'
+                break;
+            case 'order.html':
+                document.title = '通信販売 | Q醬包子饅頭店'
+                break;
+            case 'delivery.html':
+                document.title = '送料について | Q醬包子饅頭店'
+                break;
+            case 'terms.html':
+                document.title = '特定商取引法 | Q醬包子饅頭店'
+                break;
+        }
+    }
 }
