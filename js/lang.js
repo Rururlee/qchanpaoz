@@ -790,6 +790,9 @@ function changeTitle() {
     console.log(lang)
     if (lang == 'cn') {
         switch (pathname) {
+            case '':
+                document.title = 'Q醬包子饅頭店'
+                break;
             case 'index.html':
                 document.title = 'Q醬包子饅頭店'
                 break;
